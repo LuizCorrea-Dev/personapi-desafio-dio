@@ -1,17 +1,22 @@
 package com.luizcorrea.personapi.entity;
 
 import com.luizcorrea.personapi.enums.PhoneType;
-import lombok.*;
-import org.hibernate.Hibernate;
 
-import javax.persistence.*;
-import java.util.Objects;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,17 +32,4 @@ public class Phone {
 
     @Column(nullable = false)
     private String number;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Phone phone = (Phone) o;
-        return Objects.equals(id, phone.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return 0;
-    }
 }

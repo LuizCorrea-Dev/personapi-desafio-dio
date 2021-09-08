@@ -1,10 +1,10 @@
-package com.luizcorrea.personapidesafiodio;
+package com.luizcorrea.personapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PersonapiDesafioDioApplicationTests {
+class PersonapiApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.luizcorrea.personapidesafiodio;
+package com.luizcorrea.personapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PersonapiDesafioDioApplication {
+public class PersonapiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PersonapiDesafioDioApplication.class, args);
+		SpringApplication.run(PersonapiApplication.class, args);
 	}
 
 }

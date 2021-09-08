@@ -1,5 +1,5 @@
 @REM ----------------------------------------------------------------------------
-@REM Licensed to the Apache Software Foundation (ASF) under one
+@REM Licensed to the Apache Software Foundation (ASF) under com
 @REM or more contributor license agreements.  See the NOTICE file
 @REM distributed with this work for additional information
 @REM regarding copyright ownership.  The ASF licenses this file
@@ -43,7 +43,7 @@ title %0
 @REM set %HOME% to equivalent of $HOME
 if "%HOME%" == "" (set "HOME=%HOMEDRIVE%%HOMEPATH%")
 
-@REM Execute a user defined script before this one
+@REM Execute a user defined script before this com
 if not "%MAVEN_SKIP_RC%" == "" goto skipRcPre
 @REM check for pre script, once with legacy .bat ending and once with .cmd ending
 if exist "%HOME%\mavenrc_pre.bat" call "%HOME%\mavenrc_pre.bat"
